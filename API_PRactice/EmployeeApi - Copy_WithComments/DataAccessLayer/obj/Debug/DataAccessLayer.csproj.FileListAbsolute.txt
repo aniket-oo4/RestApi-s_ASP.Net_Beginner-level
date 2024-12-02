@@ -1,0 +1,10 @@
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

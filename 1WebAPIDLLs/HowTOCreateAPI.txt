@@ -1,0 +1,201 @@
+create MVC 4 web application
+>add connection string to 
+	: web.config -->  <connectionstrings> <add name="mystring" connnectionstring="blablabla"/>
+			</connectionstrings
+
+
+>Add All Dll replace  with existing ones  (first remove all of these from current references then add your references stored in foldr )
+  1] System.Web.Http.dll
+  2]System.Web.Htpp.WebHost.dll
+  3]NewtonSoft.Json.dll 
+  4]System.Net.Http.Formatting.dll
+
+
+//5]System.Net.Http.dll (optional or add ) //add this when we want server side biding in class 
+//7]  System.Web.Http.Cors.dll (compulsory for resolving cors )
+//8] System.web.Cors.dll 
+
+..-> config.EnableCors(new EnableCorsAttribute("*", "*", "*")); //for Cors enable
+
+>Add --> App_start -->WebApiConfig.cs -->void register{  -->  config.MapHttpAttributeRoutes();// for attributes  and routing   }
+
+> Replace  //WebApiConfig.Register(GlobalConfiguration.Configuration)
+;with   --> GlobalConfiguration.Configure(WebApiConfig.Register);
+   
+> Add in Case of Authorization using jwtToken then in 
+ > App_start -->WebApiConfig ---> register(){ add (call following method to add authorization filter )
+		--> config.Filters.Add(new JwtAuthenticationFilter());  
+        
+
+>Add  httpProtocol for solving Cors issue :(Cross-origin resource sharing (CORS) errors occur when a server doesn't return the HTTP headers that the CORS standard requires. To resolve a CORS error from an API Gateway REST API or HTTP API, you must reconfigure the API to meet the CORS standard. Note: You must configure CORS at the resource level)
+
+// To Solve Cors do following 
+	:
+	> Add  folllowing reference to Api layer
+	    1]  System.Web.Http.Cors.dll
+	    2] System.web.Cors.dll 
+	>in App_start-->webApiCofig.cs --> add  (call following method after adding dlls ):
+			-> config.EnableCors(new EnableCorsAttribute("*", "*", "*")); //for Cors enable
+
+
+
+  ::// below method does not work if there is authorization
+in we.config :
+ add ->  /*<systemwebServers>
+		<httpProtocol>
+			<customHeaders>
+				   <add name="Access-Control-Allow-Origin" value="*"/>
+			</customheaders>
+		</httpProtocol>
+	<systemwebServers>
+*/
+// above method does not work 
+
+
+
+//* application layers 
+
+1]Ui (mobile ,laptop,kiosk,Iot)
+2]API (optional);
+3]Business
+4]Data Access
+5]DataBase Sql Server 
+
+// Create 2 Projects ie. ClassLibraries 
+	1] Core (Businnes Logic) Layer
+	2] DataAccess Layer 
+
+// in Core  layer create classes such as 
+
+
+ >>1] Action Result 
+
+	public class ActionResult<T>
+    {
+        public ActionResult()
+        {
+            ErrorList = new List<string>();
+        }
+        public Boolean IsSuccess { get; set; }
+        public List<string> ErrorList { get; set; }
+        public T Data { get; set; }  // for getting result into that 
+        public string Message { get; set; }  // any message code Ok/Failed
+    }
+
+2] Data Mapper :
+
+
+namespace LeaveCore_BL
+{
+    public static class DataMapper
+    {
+
+        public static LeaveModel ToModel(this LeaveEntity leaveEntity)
+        {
+            LeaveModel leaveModel = new LeaveModel();
+            leaveModel.leaveId = leaveEntity.leaveId;
+            leaveModel.empId = leaveEntity.empId;
+           
+            return leaveModel;
+        }
+
+        public static LeaveEntity ToEntity(this LeaveModel leaveModel)
+        {
+            LeaveEntity leaveEntity;
+            if (leaveModel.applicationDate != DateTime.MinValue)
+            {
+                leaveEntity = new LeaveEntity(); 
+                leaveEntity.applicationDate = leaveModel.applicationDate;
+
+                leaveEntity.leaveId = leaveModel.leaveId;
+                leaveEntity.empId = leaveModel.empId;
+             
+            }
+            else
+            {
+              leaveEntity = new LeaveEntity(leaveModel.empId, leaveModel.leaveType, leaveModel.leaveDateFrom);
+            }
+            
+            return leaveEntity;
+        }
+
+
+    }
+}
+
+
+3]Dto For Objects that we want to pass 
+	  public class LeaveEntity
+    {
+        public int leaveId { get; set; }
+        public int empId { get; set; }
+        public string empName { get; set; }
+        
+}
+
+4] Manager class who manages all the Logic 
+eg 
+	  public class LeaveManager
+    {
+        private readonly DataManager _datamanager;
+        public LeaveManager()
+        {
+            this._datamanager = new DataManager();
+        }
+
+
+        public ActionResult<List<LeaveEntity>> GetAllLeaves()
+        {...}}
+
+5] Exception class For smart object validations (optional)
+	  public class MyException<T> : Exception
+    {
+        public ActionResult<T> result;
+        public MyException(ActionResult<T> result)
+        {
+            this.result = result;
+        }
+    }
+
+
+// Add Reference of business layer to the api layrr
+// to Businness layer add reference for getting connection string of api layer  such as
+>add Reference --> Assemblies-->Framework -->System.Configuration.dll
+// Add Reference of Data LAyer to business layer when created 
+
+
+// creating data layer 
+
+add reference for connection string such as 
+	>add Reference --> Assemblies-->Framework -->System.Configuration.dll
+
+Create a classes for managing database transactions 
+crate Dto also as model 
+
+
+// Creating aPi Layer
+Add Controller -->
+  change Parent from Controller to APiController 
+ ex 
+ public class LeaveApiController : ApiController{
+}
+// Attributes
+[Http]
+[RoutePrefix("gheuntak ")] --> its for controller 
+[Route("formethods ")] --> its for methods get put post Delete
+
+[Authorize] --> for applying restrictions 
+[Authorize (Roles="r1")] -- Authorization with roles 
+
+
+// PArameters of get,put ,post,or delete methods 
+
+[FromUri] --> it passes the data as url (QueryString ) To the api
+  ex:  public ActionResult<LeaveEntity> Post([FromUri]int id)
+
+[FromBody]--> It passes the data to api using Body as dto As JSOn string 
+ex : public ActionResult<LeaveEntity> Post([FromBody]LeaveDTO leave)
+
+
+
+

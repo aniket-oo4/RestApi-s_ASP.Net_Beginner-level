@@ -1,0 +1,12 @@
+To get attribute routing to work 2 changes are required.
+In App_Start/WebApiConfig.cs file, add following statement in Register method
+// Web API routes 
+config.MapHttpAttributeRoutes();
+Change following line Application_Start method of global.asax,cs 
+WebApiConfig.Register(GlobalConfiguration.Configuration);
+to
+GlobalConfiguration.Configure(WebApiConfig.Register);
+
+
+
+

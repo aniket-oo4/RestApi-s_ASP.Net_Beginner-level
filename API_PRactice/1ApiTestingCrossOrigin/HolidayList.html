@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday List</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Holiday List</h1>
+    <div id="holidayTable"></div>
+
+    <script>
+        async function getToken() {
+            const tokenUrl = 'http://localhost/AscentESS/AscentAPI/token';
+            const payload = 'username=prasad.naik%40eilisys.com&password=Ascent123!&grant_type=password&request_type=90&security_token=GOqH2wzRPKeUsssHobpdMshc10TwNOVrb8%2FsxbINEM4yY31jjT4OK5aBz9N%2BKWU8&webuser=5384';
+
+            try {
+                const response = await fetch(tokenUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: payload
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to get token');
+                }
+
+                const data = await response.json();
+                return data.access_token;
+            } catch (error) {
+                console.error('Error getting token:', error);
+                return null;
+            }
+        }
+
+        async function getHolidays(token) {
+            const holidayUrl = 'http://localhost/AscentESS/ascentapi/api/leave-management/users/me/holidays';
+
+            try {
+                const response = await fetch(holidayUrl, {
+                    method: 'GET',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to get holidays');
+                }
+
+                return await response.json();
+            } catch (error) {
+                console.error('Error getting holidays:', error);
+                return null;
+            }
+        }
+
+        function displayHolidays(holidays) {
+            const tableContainer = document.getElementById('holidayTable');
+            if (!holidays || holidays.length === 0) {
+                tableContainer.innerHTML = '<p>No holidays found.</p>';
+                return;
+            }
+
+            let tableHtml = `
+                <table>
+                    <tr>
+                        <th> Location</th>
+                        <th>Date</th>
+                        <th>Holiday Name</th>
+                    </tr>
+            `;
+
+            holidays.forEach(holiday => {
+                tableHtml += `
+                    <tr>
+                        <td>${holiday.LocationCode}</td>
+                        <td>${holiday.HolidayDt}</td>
+                        <td>${holiday.HolidayInfo}</td>
+                    </tr>
+                `;
+            });
+
+            tableHtml += '</table>';
+            tableContainer.innerHTML = tableHtml;
+        }
+
+        async function init() {
+            const token = await getToken();
+            if (token) {
+                const response = await getHolidays(token);
+                const holidays = response.data;
+                if (holidays) {
+                    displayHolidays(holidays);
+                } else {
+                    document.getElementById('holidayTable').innerHTML = '<p>Failed to fetch holidays.</p>';
+                }
+            } else {
+                document.getElementById('holidayTable').innerHTML = '<p>Failed to authenticate.</p>';
+            }
+        }
+
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll.config
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\bin\Debug\EmployeeDataAccess.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\TEMP\Demo1\EmployeeDataAccess\obj\Debug\EmployeeDataAccess.pdb

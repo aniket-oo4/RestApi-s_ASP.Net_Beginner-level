@@ -1,0 +1,28 @@
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI\LeaveCore_BL\bin\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI\LeaveCore_BL\bin\Debug\LeaveCore_BL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI\LeaveCore_BL\bin\Debug\LeaveData_DL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI\LeaveCore_BL\bin\Debug\LeaveData_DL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI\LeaveCore_BL\obj\Debug\LeaveCore_BL.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI\LeaveCore_BL\obj\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI\LeaveCore_BL\obj\Debug\LeaveCore_BL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveCore_BL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveData_DL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveData_DL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\obj\Debug\LeaveCore_BL.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\obj\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\obj\Debug\LeaveCore_BL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveCore_BL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveData_DL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\bin\Debug\LeaveData_DL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\obj\Debug\LeaveCore_BL.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\obj\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\LeaveApplicationAPI - Copy (2)_With UI Layer\LeaveCore_BL\obj\Debug\LeaveCore_BL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ApiForParamGrid\LeaveCore_BL\bin\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ApiForParamGrid\LeaveCore_BL\bin\Debug\LeaveCore_BL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ApiForParamGrid\LeaveCore_BL\bin\Debug\LeaveData_DL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ApiForParamGrid\LeaveCore_BL\bin\Debug\LeaveData_DL.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ApiForParamGrid\LeaveCore_BL\obj\Debug\LeaveCore_BL.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ApiForParamGrid\LeaveCore_BL\obj\Debug\LeaveCore_BL.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ApiForParamGrid\LeaveCore_BL\obj\Debug\LeaveCore_BL.pdb

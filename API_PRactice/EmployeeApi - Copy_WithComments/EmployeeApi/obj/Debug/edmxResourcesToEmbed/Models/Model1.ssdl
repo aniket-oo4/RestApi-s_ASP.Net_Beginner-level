@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="APIPracticeModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="APIPracticeModelStoreContainer">
+    <EntitySet Name="Employee" EntityType="APIPracticeModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="emp_id" />
+    </Key>
+    <Property Name="emp_id" Type="int" Nullable="false" />
+    <Property Name="emp_name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="emp_age" Type="int" Nullable="false" />
+    <Property Name="emp_email" Type="varchar" Nullable="false" MaxLength="70" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContriesAPIDemoApp", "ContriesAPIDemoApp\ContriesAPIDemoApp.csproj", "{0FA39102-FC81-4F4D-85FB-557A77B3F1ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryBusiness", "CountryDLL\CountryBusiness.csproj", "{950B9EBF-4F64-4E3D-9E95-39C3FF0CC632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryDataAccess", "CountryDataAccess\CountryDataAccess.csproj", "{B30D60F8-ECA5-4DDB-A6EB-7BD42177DC93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FA39102-FC81-4F4D-85FB-557A77B3F1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA39102-FC81-4F4D-85FB-557A77B3F1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA39102-FC81-4F4D-85FB-557A77B3F1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA39102-FC81-4F4D-85FB-557A77B3F1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{950B9EBF-4F64-4E3D-9E95-39C3FF0CC632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{950B9EBF-4F64-4E3D-9E95-39C3FF0CC632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{950B9EBF-4F64-4E3D-9E95-39C3FF0CC632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{950B9EBF-4F64-4E3D-9E95-39C3FF0CC632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30D60F8-ECA5-4DDB-A6EB-7BD42177DC93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30D60F8-ECA5-4DDB-A6EB-7BD42177DC93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30D60F8-ECA5-4DDB-A6EB-7BD42177DC93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30D60F8-ECA5-4DDB-A6EB-7BD42177DC93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

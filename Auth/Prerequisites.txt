@@ -1,0 +1,5 @@
+In WebAPiConfig.cs add following line to add our custom filter.
+ 
+            config.Filters.Add(new JwtAuthenticationFilter());
+
+ 

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo1", "Demo1\Demo1.csproj", "{F09C3126-379C-49B9-934D-13929954C83E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeDataAccess", "EmployeeDataAccess\EmployeeDataAccess.csproj", "{6B5BE70D-ECD3-4F6C-AA9E-5E8D2FA67BFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F09C3126-379C-49B9-934D-13929954C83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F09C3126-379C-49B9-934D-13929954C83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F09C3126-379C-49B9-934D-13929954C83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F09C3126-379C-49B9-934D-13929954C83E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B5BE70D-ECD3-4F6C-AA9E-5E8D2FA67BFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B5BE70D-ECD3-4F6C-AA9E-5E8D2FA67BFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B5BE70D-ECD3-4F6C-AA9E-5E8D2FA67BFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B5BE70D-ECD3-4F6C-AA9E-5E8D2FA67BFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

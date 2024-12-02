@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityApi", "CityApi\CityApi.csproj", "{1CF726C8-FE0B-4F12-B61B-22A429083EBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "City.core", "City.core\City.core.csproj", "{F62E8A6A-6146-45C6-8459-5FF6B1B41E6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "City.Data", "City.Data\City.Data.csproj", "{E9182992-53DC-4270-AB40-A08895061EF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF726C8-FE0B-4F12-B61B-22A429083EBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF726C8-FE0B-4F12-B61B-22A429083EBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF726C8-FE0B-4F12-B61B-22A429083EBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF726C8-FE0B-4F12-B61B-22A429083EBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F62E8A6A-6146-45C6-8459-5FF6B1B41E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F62E8A6A-6146-45C6-8459-5FF6B1B41E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F62E8A6A-6146-45C6-8459-5FF6B1B41E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F62E8A6A-6146-45C6-8459-5FF6B1B41E6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9182992-53DC-4270-AB40-A08895061EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9182992-53DC-4270-AB40-A08895061EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9182992-53DC-4270-AB40-A08895061EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9182992-53DC-4270-AB40-A08895061EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

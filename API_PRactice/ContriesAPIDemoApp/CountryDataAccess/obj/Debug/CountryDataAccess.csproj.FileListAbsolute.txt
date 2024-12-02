@@ -1,0 +1,15 @@
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\MyApp\ContriesAPIDemoApp\CountryDataAccess\bin\Debug\CountryDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\MyApp\ContriesAPIDemoApp\CountryDataAccess\bin\Debug\CountryDataAccess.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\MyApp\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\MyApp\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\MyApp\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\bin\Debug\CountryDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\bin\Debug\CountryDataAccess.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\bin\Debug\CountryDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\bin\Debug\CountryDataAccess.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\4ASP_WebAPI\PrasadSirSessions\API_PRactice\ContriesAPIDemoApp\CountryDataAccess\obj\Debug\CountryDataAccess.pdb

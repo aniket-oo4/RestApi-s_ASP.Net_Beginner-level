@@ -1,0 +1,14 @@
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Aniket.Varkhade\Desktop\aniket\3ASP_WebAPI\PrasadSirSessions\API_PRactice\EmployeeApi - Copy_WithComments\BusinessLayer\obj\Debug\BusinessLayer.pdb

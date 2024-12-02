@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday List</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+        <script src="ApiCaller.js"></script>
+  </head>
+  <body>
+    <h1>Holiday List</h1>
+    <div id="holidayTable"></div>
+
+    <script>
+              async function getToken() {
+                  const tokenUrl = 'http://localhost:53842/api/TokenGenerator/';
+                  const payload = `{"username":"aniket","password":"password","role":"aniket"}`;
+
+                  try {
+                      const response = await fetch(tokenUrl, {
+                          method: 'POST',
+                          headers: {
+                              'Content-Type': 'application/json'
+                          },
+                          body: payload
+                      });
+
+                      if (!response.ok) {
+                          throw new Error('Failed to get token');
+                      }
+
+                      const data = await response.json();
+                      return data;
+                  } catch (error) {
+                      console.error('Error getting token:', error);
+                      return null;
+                  }
+              }
+
+              async function getHolidays(token) {
+                console.log(token);
+                  const holidayUrl = 'http://localhost:53842/api/LeaveApi';
+
+                  try {
+                      const response = await fetch(holidayUrl, {
+                          method: 'GET',
+                          headers: {
+                              'Authorization': `Bearer ${token}`
+                          }
+                      });
+
+                      if (!response.ok) {
+                          throw new Error('Failed to get holidays');
+                      }
+
+                      return await response.json();
+                  } catch (error) {
+                      console.error('Error getting holidays:', error);
+                      return null;
+                  }
+              }
+
+              function displayHolidays(holidays) {
+                  const tableContainer = document.getElementById('holidayTable');
+                  if (!holidays || holidays.length === 0) {
+                      tableContainer.innerHTML = '<p>No holidays found.</p>';
+                      return;
+                  }
+
+                  let tableHtml = `
+                      <table>
+                          <tr>
+                              <th>leaveId </th>
+                              <th>empName </th>
+                              <th> leaveType</th>
+                              <th>applicationDate </th>
+                              <th>leaveDateFrom </th>
+                              <th>leaveDateTo </th>
+                              <th>status </th>
+                              <th> totalLeaves</th>
+                          </tr>
+                  `;
+
+                  holidays.forEach(holiday => {
+                      tableHtml += `
+                          <tr>
+                             <td>${holiday.leaveId}</td>
+                              <td>${holiday.empName}</td>
+                               <td>${holiday.leaveType}</td>
+                                <td>${holiday.applicationDate}</td>
+                                 <td>${holiday.leaveDateFrom}</td>
+                                  <td>${holiday.leaveDateTo}</td>
+                                   <td>${holiday.status}</td>
+                                   <td>${holiday.totalLeaves}</td>
+                          </tr>
+                      `;
+                  });
+
+                  tableHtml += '</table>';
+                  tableContainer.innerHTML = tableHtml;
+              }
+
+              async function init() {
+                  const token = await getToken();
+                  if (token) {
+                      const response = await getHolidays(token);
+                      const holidays = response.Data;
+                      if (holidays) {
+                          displayHolidays(holidays);
+                      } else {
+                          document.getElementById('holidayTable').innerHTML = '<p>Failed to fetch holidays.</p>';
+                      }
+                  } else {
+                      document.getElementById('holidayTable').innerHTML = '<p>Failed to authenticate.</p>';
+                  }
+              }
+
+              init();
+    </script>
+
+  </body>
+</html>

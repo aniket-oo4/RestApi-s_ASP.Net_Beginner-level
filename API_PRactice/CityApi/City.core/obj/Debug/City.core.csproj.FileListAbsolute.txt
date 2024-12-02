@@ -1,0 +1,7 @@
+C:\Users\akshada.jadhav\Documents\Visual Studio 2012\WebApiDemo\CityApi\City.core\bin\Debug\City.core.dll
+C:\Users\akshada.jadhav\Documents\Visual Studio 2012\WebApiDemo\CityApi\City.core\bin\Debug\City.core.pdb
+C:\Users\akshada.jadhav\Documents\Visual Studio 2012\WebApiDemo\CityApi\City.core\bin\Debug\City.Data.dll
+C:\Users\akshada.jadhav\Documents\Visual Studio 2012\WebApiDemo\CityApi\City.core\bin\Debug\City.Data.pdb
+C:\Users\akshada.jadhav\Documents\Visual Studio 2012\WebApiDemo\CityApi\City.core\obj\Debug\City.core.csprojResolveAssemblyReference.cache
+C:\Users\akshada.jadhav\Documents\Visual Studio 2012\WebApiDemo\CityApi\City.core\obj\Debug\City.core.dll
+C:\Users\akshada.jadhav\Documents\Visual Studio 2012\WebApiDemo\CityApi\City.core\obj\Debug\City.core.pdb

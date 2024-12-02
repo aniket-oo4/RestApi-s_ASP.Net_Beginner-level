@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>leave List</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>leave List</h1>
+    <form>
+      enter Employee id :<input type="number" id="txtEmpId" class="empID" />
+      <br />
+      enter Leave Type : <input type="text" id="txtLeaveType" />
+      <br />
+      "leaveDateFrom": <input type="text" id="txtLeaveFrom" />
+      <br />
+      "leaveDateTo": <input type="text" id="txtLeaveTo" />
+      <br />
+      "remark": <input type="text" id="txtRemark" />
+      <br />
+      "status": <input type="text" id="txtStatus" />
+      <br />
+      <input
+        type="button"
+        value=" Add Application "
+        onclick="AddApplication()"
+      />
+    </form>
+
+    <div id="leaveTable"></div>
+
+    <script>
+      async function getToken() {
+        const tokenUrl = "http://localhost:53842/api/TokenGenerator/";
+        const payload = `{"username":"aniket","password":"password","role":"aniket"}`;
+
+        try {
+          const response = await fetch(tokenUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: payload,
+          });
+
+          if (!response.ok) {
+            throw new Error("Failed to get token");
+          }
+
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error("Error getting token:", error);
+          return null;
+        }
+      }
+
+      async function PostLeaves(token, leave) {
+        console.log(token);
+        const leaveUrl = "http://localhost:53842/api/LeaveApi";
+
+        try {
+          const response = await fetch(leaveUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: `Bearer ${token}`,
+            },
+            body: JSON.stringify(leave),
+          });
+
+          if (!response.ok) {
+            throw new Error("Failed to post Leaves");
+          }
+
+          return await response.json();
+        } catch (error) {
+          console.error("Error getting Leaves:", error);
+          return null;
+        }
+      }
+
+      function displayLeave(leave) {
+        const tableContainer = document.getElementById("leaveTable");
+        if (!leave || leave.length === 0) {
+          tableContainer.innerHTML = "<p>No leaves found.</p>";
+          return;
+        }
+
+        let tableHtml = `
+                      <table>
+                          <tr>
+                              <th>leaveId </th>
+                              <th>empName </th>
+                              <th> leaveType</th>
+                              <th>applicationDate </th>
+                              <th>leaveDateFrom </th>
+                              <th>leaveDateTo </th>
+                              <th>status </th>
+                              <th> totalLeaves</th>
+                          </tr>
+                  `;
+
+        tableHtml += `
+                          <tr>
+                             <td>${leave.leaveId}</td>
+                              <td>${leave.empName}</td>
+                               <td>${leave.leaveType}</td>
+                                <td>${leave.applicationDate}</td>
+                                 <td>${leave.leaveDateFrom}</td>
+                                  <td>${leave.leaveDateTo}</td>
+                                   <td>${leave.status}</td>
+                                   <td>${leave.totalLeaves}</td>
+                          </tr>
+                      `;
+
+        tableHtml += "</table>";
+        tableContainer.innerHTML = tableHtml;
+      }
+
+      async function AddApplication() {
+        var leave;
+
+        leave = {
+          empId: 10,
+          leaveType: "Casual",
+          leaveDateFrom: "2024-09-3T10:52:01.433",
+          leaveDateTo: "2024-09-04T10:52:01.433",
+          remark: "inReview",
+          status: "pending",
+        };
+
+        leave.empId = parseInt(document.getElementById("txtEmpId").value, 10);
+        leave.leaveType = document.getElementById("txtLeaveType").value;
+        leave.leaveDateFrom = document.getElementById("txtLeaveFrom").value;
+        leave.leaveDateTo = document.getElementById("txtLeaveTo").value;
+        leave.remark = document.getElementById("txtRemark").value;
+        leave.status = document.getElementById("txtStatus").value;
+        console.log(leave);
+        const token = await getToken();
+        if (token) {
+          const response = await PostLeaves(token, leave);
+          const leaves = response.Data;
+          if (leaves) {
+            displayLeave(leaves);
+          } else {
+            document.getElementById("leaveTable").innerHTML =
+              "<p>Failed to fetch leaves.</p>";
+            alert(response.ErrorList[0]);
+          }
+        } else {
+          document.getElementById("leaveTable").innerHTML =
+            "<p>Failed to authenticate.</p>";
+        }
+      }
+
+      //   init();
+    </script>
+  </body>
+</html>
